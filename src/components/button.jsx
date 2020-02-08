@@ -1,6 +1,6 @@
 import React from "react";
 import LanguageContext from "../contexts/languageContext";
-import ColorContext from "../contexts/languageContext";
+import ColorContext from "../contexts/colorContext";
 
 class Button extends React.Component {
   renderSubmit(value) {

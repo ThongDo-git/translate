@@ -5,15 +5,11 @@ import ColorContext from "../contexts/colorContext";
 import LanguageSelector from "./languageSelector";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { language: "english" };
-    this.onLanguageChange = this.onLanguageChange.bind(this);
-  }
+  state = { language: "english" };
 
-  onLanguageChange(language) {
+  onLanguageChange = language => {
     this.setState({ language });
-  }
+  };
 
   render() {
     return (
